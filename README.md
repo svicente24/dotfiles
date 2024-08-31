@@ -1,6 +1,6 @@
 ## Terminal and Application Icons with Nerd-Fonts
 
-To display icons in terminal or applications Fonts, I'm using [Nerd-Fonts](https://www.nerdfonts.com). I'm currently using the **FiraCode Nerd Font**
+To display icons in terminal or applications, I'm using [Nerd-Fonts](https://www.nerdfonts.com). I'm currently using the **FiraCode Nerd Font**.
 
 ## Configuration
 
@@ -46,6 +46,29 @@ eval "$(starship init bash)"
 ...
 
 Invoke-Expression (&starship init powershell)
+```
+
+- Finally reload your terminal.
+
+### CommandLine (CMD)
+
+- Install the starship binary: `winget install starship or scoop install starship` [Optional if you've already configured Powershell]
+
+- Modify Execution Policy for scripts: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` [Optional if you've already configured Powershell]
+
+- Check you set correctly the policy: `Get-ExecutionPolicy -List` [Optional if you've already configured Powershell]
+
+- Create the folder and copy starship.toml: `mkdir -p ~/.config && vim ~/.config/starship.toml` [Optional if you've already configured Powershell]
+
+- Install the [clink](https://chrisant996.github.io/clink/clink.html) binary: `winget install clink or scoop install clink`
+
+- Add the following to the end of starship.lua: `code %LocalAppData%\clink\starship.lua`
+
+```Lua
+# %LocalAppData%\clink\starship.lua
+...
+
+load(io.popen('starship init cmd'):read("*a"))()
 ```
 
 - Finally reload your terminal.
