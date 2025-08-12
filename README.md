@@ -44,7 +44,7 @@ eval "$(starship init bash)"
 ```Powershell
 # ~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 ...
-
+$Env:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 Invoke-Expression (&starship init powershell)
 ```
 
