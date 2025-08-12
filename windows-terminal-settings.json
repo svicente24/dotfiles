@@ -10,7 +10,8 @@
       "cursorShape": "filledBox",
       "font": {
         "face": "FiraCode Nerd Font",
-        "size": 14
+        "size": 12,
+        "weight": "semi-bold"
       },
       "historySize": 12000,
       "intenseTextStyle": "bright",
@@ -87,3 +88,4 @@
   "tabSwitcherMode": "inOrder",
   "useAcrylicInTabRow": true
 }
+
