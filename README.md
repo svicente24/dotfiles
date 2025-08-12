@@ -37,7 +37,7 @@ eval "$(starship init bash)"
 
 - Check you set correctly the policy: `Get-ExecutionPolicy -List`
 
-- Create the folder and copy starship.toml: `mkdir -p ~/.config && vim ~/.config/starship.toml`
+- Create the folder and copy starship.toml: `mkdir -p ~/.config`
 
 - Add the following to the end of Microsoft.PowerShell_profile.ps1: `code $PROFILE`
 
@@ -58,7 +58,7 @@ Invoke-Expression (&starship init powershell)
 
 - Check you set correctly the policy: `Get-ExecutionPolicy -List` [Optional if you've already configured Powershell]
 
-- Create the folder and copy starship.toml: `mkdir -p ~/.config && vim ~/.config/starship.toml` [Optional if you've already configured Powershell]
+- Create the folder and copy starship.toml: `mkdir -p ~/.config` [Optional if you've already configured Powershell]
 
 - Install the [clink](https://chrisant996.github.io/clink/clink.html) binary: `winget install clink or scoop install clink`
 
